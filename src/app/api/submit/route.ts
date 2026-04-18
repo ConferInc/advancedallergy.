@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     try {
       await resend.emails.send({
         from: 'Advanced Allergy Intake <info@confersolutions.ai>',
-        to: ['info@confersolutions.ai'], // Practice email — can be updated
+        to: ['swapnilvaidya@hotmail.com'],
         subject: `New ${visitType} Intake: ${patientName} (DOB: ${dob})`,
         text: `
 INTAKE FORM SUBMISSION
