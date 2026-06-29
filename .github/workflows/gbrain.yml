@@ -1,0 +1,13 @@
+name: GBrain Sync
+on:
+  push:
+    branches: [main, master]
+jobs:
+  gbrain:
+    uses: ConferInc/.github/.github/workflows/confer-gbrain-sync.yml@main
+    with:
+      source: advancedallergy
+      client: "Advanced Allergy"
+      project: "Advanced Allergy"
+      repo_type: app
+    secrets: inherit
